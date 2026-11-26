@@ -1,5 +1,7 @@
 # kipitidy
 
+[![npm](https://img.shields.io/npm/v/@kipit-labs/kipitidy)](https://www.npmjs.com/package/@kipit-labs/kipitidy)
+
 The kipit-labs UI kit: compact, shadcn-based React components and their Tailwind v4 theme. Used by
 [kipitiny](https://github.com/kipit-labs/kipitiny).
 
