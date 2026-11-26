@@ -36,7 +36,28 @@
     "Tooltip": "../groups/feedback.md",
     "Dialog": "../groups/overlays.md",
     "AlertDialog": "../groups/overlays.md",
-    "Sheet": "../groups/overlays.md"
+    "Sheet": "../groups/overlays.md",
+    "Toggle": "../groups/actions.md",
+    "CopyButton": "../groups/actions.md",
+    "ChoiceTile": "../groups/actions.md",
+    "Slider": "../groups/forms.md",
+    "InputGroup": "../groups/forms.md",
+    "CheckboxField": "../groups/forms.md",
+    "Command": "../groups/forms.md",
+    "Section": "../groups/layout.md",
+    "Meta": "../groups/layout.md",
+    "IconTile": "../groups/layout.md",
+    "Avatar": "../groups/layout.md",
+    "StatCard": "../groups/feedback.md",
+    "EmptyState": "../groups/feedback.md",
+    "Loading": "../groups/feedback.md",
+    "CopyField": "../groups/forms.md",
+    "ChartContainer": "../groups/feedback.md",
+    "Bubble": "../groups/feedback.md",
+    "Message": "../groups/feedback.md",
+    "Popover": "../groups/overlays.md",
+    "ConfirmDialog": "../groups/overlays.md",
+    "DangerZone": "../groups/layout.md"
   },
   "componentSrcMap": {
     "AlertDialogAction": null,
@@ -50,20 +71,41 @@
     "AlertDialogPortal": null,
     "AlertDialogTitle": null,
     "AlertDialogTrigger": null,
+    "AvatarBadge": null,
+    "AvatarFallback": null,
+    "AvatarGroup": null,
+    "AvatarGroupCount": null,
+    "AvatarImage": null,
     "BreadcrumbEllipsis": null,
     "BreadcrumbItem": null,
     "BreadcrumbLink": null,
     "BreadcrumbList": null,
     "BreadcrumbPage": null,
     "BreadcrumbSeparator": null,
+    "BubbleContent": null,
+    "BubbleGroup": null,
+    "BubbleReactions": null,
     "CardAction": null,
     "CardContent": null,
     "CardDescription": null,
     "CardFooter": null,
     "CardHeader": null,
     "CardTitle": null,
+    "ChartLegend": null,
+    "ChartLegendContent": null,
+    "ChartStyle": null,
+    "ChartTooltip": null,
+    "ChartTooltipContent": null,
     "CollapsibleContent": null,
     "CollapsibleTrigger": null,
+    "CommandDialog": null,
+    "CommandEmpty": null,
+    "CommandGroup": null,
+    "CommandInput": null,
+    "CommandItem": null,
+    "CommandList": null,
+    "CommandSeparator": null,
+    "CommandShortcut": null,
     "DialogClose": null,
     "DialogContent": null,
     "DialogDescription": null,
@@ -87,6 +129,23 @@
     "DropdownMenuSubContent": null,
     "DropdownMenuSubTrigger": null,
     "DropdownMenuTrigger": null,
+    "InputGroupAddon": null,
+    "InputGroupButton": null,
+    "InputGroupInput": null,
+    "InputGroupText": null,
+    "InputGroupTextarea": null,
+    "MessageAvatar": null,
+    "MessageContent": null,
+    "MessageFooter": null,
+    "MessageGroup": null,
+    "MessageHeader": null,
+    "MetaItem": null,
+    "PopoverAnchor": null,
+    "PopoverContent": null,
+    "PopoverDescription": null,
+    "PopoverHeader": null,
+    "PopoverTitle": null,
+    "PopoverTrigger": null,
     "SegmentedItem": null,
     "SelectContent": null,
     "SelectGroup": null,
@@ -139,7 +198,8 @@
   },
   "extraEntries": [
     "lucide-react",
-    "sonner"
+    "sonner",
+    "recharts"
   ],
   "overrides": {
     "Dialog": {
@@ -186,6 +246,23 @@
       "cardMode": "column"
     },
     "Stepper": {
+      "cardMode": "column"
+    },
+    "Popover": {
+      "cardMode": "single",
+      "viewport": "420x260"
+    },
+    "ConfirmDialog": {
+      "cardMode": "single",
+      "viewport": "720x400"
+    },
+    "StatCard": {
+      "cardMode": "column"
+    },
+    "ChoiceTile": {
+      "cardMode": "column"
+    },
+    "DangerZone": {
       "cardMode": "column"
     }
   },

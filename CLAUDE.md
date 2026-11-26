@@ -12,6 +12,8 @@ consumer: kipitiny (`kipit-labs/kipitiny`, `web/`).
   components. Consumers do `@import "tailwindcss"; @import "@kipit-labs/kipitidy/theme.css";`.
 - `react`, `react-dom`, `sonner`, `next-themes` and `tailwindcss` are peers: they hold app-wide state (contexts, the
   toast store) and must be the app's single copy. Everything else the kit imports is a dependency.
+- `recharts` is an optional peer: the app passes its own charts into `ChartContainer`, so both must share one copy;
+  apps without charts don't install it.
 - A renamed or removed export, prop or token is breaking: `feat!:` / `fix!:`, and the PR says what kipitiny must change.
 - The Claude Design sync lives in `.design-sync/` (read its `NOTES.md` before touching it).
 

@@ -4,9 +4,9 @@ Source is this repo's `src/`, synced as the `kipitidy` design system (`window.Ki
 
 ## Known render warns
 
-27/27 render, no errors. Expected warn lines:
+27/27 rendered at the last sync, before the 0.2.0 components: their 21 previews (avatar, chart, command, confirm dialog…) are not synced yet. Expected warn lines:
 
-- `[EXPORT_COLLISION]` lucide-react (`Sheet`, `Sidebar`) and sonner (`Toaster`): no preview imports those names from the sibling packages, so the kit's binding is the right one.
+- `[EXPORT_COLLISION]` lucide-react (`Command`, `Section`, `Sheet`, `Sidebar`), recharts (`Label`, `Tooltip`, in `extraEntries` for the chart preview) and sonner (`Toaster`): no preview imports those names from the sibling packages, so the kit's binding is the right one.
 - `[DTS_STYLE_SYSTEM]` filtering @types/react props: React's own style shorthands, not kit API.
 
 Card, Tabs and Stepper use `cardMode: "column"`: their stories are wider than a grid cell (`[GRID_OVERFLOW]`).
