@@ -178,6 +178,15 @@
     "Tip": {
       "cardMode": "single",
       "viewport": "420x160"
+    },
+    "Card": {
+      "cardMode": "column"
+    },
+    "Tabs": {
+      "cardMode": "column"
+    },
+    "Stepper": {
+      "cardMode": "column"
     }
   },
   "readmeHeader": ".design-sync/conventions.md",

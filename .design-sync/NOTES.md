@@ -4,11 +4,18 @@ Source is this repo's `src/`, synced as the `kipitidy` design system (`window.Ki
 
 ## Known render warns
 
-None. 27/27 render, no errors.
+27/27 render, no errors. Expected warn lines:
+
+- `[EXPORT_COLLISION]` lucide-react (`Sheet`, `Sidebar`) and sonner (`Toaster`): no preview imports those names from the sibling packages, so the kit's binding is the right one.
+- `[DTS_STYLE_SYSTEM]` filtering @types/react props: React's own style shorthands, not kit API.
+
+Card, Tabs and Stepper use `cardMode: "column"`: their stories are wider than a grid cell (`[GRID_OVERFLOW]`).
 
 Previews lean on two tricks: `Tip` opens through `autoFocus` (it has no `open` prop), and `Dialog`/`Sheet` set `onOpenAutoFocus` to avoid selected text in the card.
 
 ## Re-sync risks
+
+- Syncs to the Design System artifact in `artifact.json` (moved from claude.ai/design; `projectId` in config is the old project). Converter invocation: `--node-modules ./node_modules --entry .design-sync/pkg/index.ts` (the entry only locates the `.design-sync/pkg` shim; components come from `src/`).
 
 - `build-pkg.mjs` strips `@fontsource` imports from `theme.css` and appends a utility safelist. New font imports or utilities used by designs need that script updated.
 - `pkg/index.ts` re-exports `src/index.ts`, and `config.json` lists subparts in `componentSrcMap`. A new component goes in `src/index.ts`; a new subpart in `componentSrcMap` too.
