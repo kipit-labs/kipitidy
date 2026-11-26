@@ -1,9 +1,14 @@
-# kipitidy
+<p align="center"><img src="logo.svg" alt="" width="96"></p>
 
-[![npm](https://img.shields.io/npm/v/@kipit-labs/kipitidy)](https://www.npmjs.com/package/@kipit-labs/kipitidy)
+<h1 align="center">kipitidy</h1>
 
-The kipit-labs UI kit: compact, shadcn-based React components and their Tailwind v4 theme. Used by
-[kipitiny](https://github.com/kipit-labs/kipitiny).
+<p align="center">
+  <b>The kipit-labs UI kit.</b><br>
+  Compact, shadcn-based React components and their Tailwind v4 theme. Used by
+  <a href="https://github.com/kipit-labs/kipitiny">kipitiny</a> and <a href="https://github.com/kipit-labs/kipitrek">kipitrek</a>.
+</p>
+
+<p align="center"><a href="https://www.npmjs.com/package/@kipit-labs/kipitidy"><img src="https://img.shields.io/npm/v/@kipit-labs/kipitidy" alt="npm"></a></p>
 
 ```sh
 pnpm add @kipit-labs/kipitidy react react-dom sonner next-themes tailwindcss
