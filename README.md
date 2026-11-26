@@ -20,6 +20,8 @@ import { Button, Card, TooltipProvider } from "@kipit-labs/kipitidy";
 // or one file: import { Button } from "@kipit-labs/kipitidy/button";
 ```
 
+Charts (`@kipit-labs/kipitidy/chart`) wrap your own recharts components: add `recharts` too when you use them.
+
 Dark mode: class `dark` on `<html>` (next-themes `attribute="class"`). Wrap the app in `<TooltipProvider>`, and mount
 `<Toaster />` once to use sonner's `toast`.
 
