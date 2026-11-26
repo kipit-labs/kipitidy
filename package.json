@@ -1,6 +1,6 @@
 {
   "name": "@kipit-labs/kipitidy",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "kipit-labs UI kit: compact shadcn-based React components and their Tailwind v4 theme.",
   "license": "MIT",
   "repository": {
