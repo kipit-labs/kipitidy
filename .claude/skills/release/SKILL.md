@@ -48,7 +48,9 @@ Tags are bare semver, no `v` prefix: `0.6.0`, not `v0.6.0`.
    `git switch main && git pull --ff-only origin main && git branch -d chore/release-X.Y.Z`.
 
 6. **Check the publish:** `gh run list --workflow release.yml --limit 1`, then
-   `npm view @kipit-labs/kipitidy@X.Y.Z version` and `gh release view X.Y.Z --json url`.
+   `npm view @kipit-labs/kipitidy@X.Y.Z version` and `gh release view X.Y.Z --json url`. npm runs an automated
+   review first: the version page says "Validating" and `npm view` returns 404 for a few minutes. Poll the registry
+   (every 30s) until it is live before step 7.
 
 7. **Bump kipitiny** (ask first): in a kipitiny worktree on `fix/kipitidy-X.Y.Z` (`feat/...` when kipitiny needs code
    changes for a breaking release), `cd web && pnpm add @kipit-labs/kipitidy@X.Y.Z`, apply the breaking changes,
