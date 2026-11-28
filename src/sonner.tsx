@@ -4,14 +4,22 @@ import { useTheme } from "next-themes"
 import { Toaster as Sonner, type ToasterProps } from "sonner"
 import { CircleCheckIcon, InfoIcon, TriangleAlertIcon, OctagonXIcon, Loader2Icon } from "lucide-react"
 
+import { useIsMobile } from "./use-mobile.js"
+
+/**
+ * Top-center, at the bottom on a phone, where the header's actions would be under it. An app with a bottom bar
+ * lifts it above that bar: `mobileOffset={{ bottom: "calc(env(safe-area-inset-bottom) + <bar height>)" }}`.
+ */
 const Toaster = ({ ...props }: ToasterProps) => {
   const { theme = "system" } = useTheme()
+  const phone = useIsMobile()
 
   return (
     <Sonner
       theme={theme as ToasterProps["theme"]}
       className="toaster group"
-      position="top-center"
+      position={phone ? "bottom-center" : "top-center"}
+      mobileOffset={{ bottom: "calc(env(safe-area-inset-bottom) + 16px)" }}
       icons={{
         success: (
           <CircleCheckIcon className="size-4" />
