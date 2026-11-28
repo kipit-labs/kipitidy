@@ -83,7 +83,8 @@ function Button({
         children
       ) : (
         <>
-          {loading && <Spinner data-icon="inline-start" />}
+          {/* aria-busy says it: a "Loading" status here would only prefix the button's name. */}
+          {loading && <Spinner data-icon="inline-start" role={undefined} aria-label={undefined} aria-hidden />}
           {children}
         </>
       )}
